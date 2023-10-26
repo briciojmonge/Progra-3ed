@@ -44,6 +44,7 @@ namespace progra3ED {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::CheckBox^ checkBox1;
+	private: System::Windows::Forms::Button^ button1;
 
 
 
@@ -90,6 +91,7 @@ namespace progra3ED {
 			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -187,12 +189,26 @@ namespace progra3ED {
 			this->label3->Text = L"Tipo de Usuario: ";
 			this->label3->Click += gcnew System::EventHandler(this, &VentanaPrincipal::label3_Click);
 			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::MediumSpringGreen;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Consolas", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(516, 290);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(124, 48);
+			this->button1->TabIndex = 3;
+			this->button1->Text = L"Siguiente";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &VentanaPrincipal::button1_Click);
+			// 
 			// VentanaPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::DarkGray;
-			this->ClientSize = System::Drawing::Size(652, 436);
+			this->ClientSize = System::Drawing::Size(655, 350);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -225,6 +241,8 @@ private: System::Void label4_Click_1(System::Object^ sender, System::EventArgs^ 
 private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void checkBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

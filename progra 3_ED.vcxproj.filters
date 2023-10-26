@@ -18,6 +18,12 @@
     <ClCompile Include="VentanaPrincipal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ventanaAdministradorh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ventanaClienteh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VentanaPrincipal.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Main Anterior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ventanaAdministradorh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ventanaClienteh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

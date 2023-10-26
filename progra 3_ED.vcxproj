@@ -121,6 +121,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ventanaAdministradorh.cpp" />
+    <ClCompile Include="ventanaClienteh.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -129,11 +131,23 @@
     <ClInclude Include="codigos_nombres.h" />
     <ClInclude Include="Main Anterior.h" />
     <ClInclude Include="RN.h" />
+    <ClInclude Include="ventanaAdministradorh.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ventanaClienteh.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="VentanaPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ventanaAdministradorh.resx">
+      <DependentUpon>ventanaAdministradorh.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanaClienteh.resx">
+      <DependentUpon>ventanaClienteh.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.h</DependentUpon>
     </EmbeddedResource>
