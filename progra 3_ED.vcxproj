@@ -124,6 +124,10 @@
     <ClCompile Include="VentanaPrincipal.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AA.h" />
+    <ClInclude Include="Binario.h" />
+    <ClInclude Include="codigos_nombres.h" />
+    <ClInclude Include="RN.h" />
     <ClInclude Include="VentanaPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>

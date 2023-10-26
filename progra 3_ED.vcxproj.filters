@@ -23,5 +23,17 @@
     <ClInclude Include="VentanaPrincipal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Binario.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="codigos_nombres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
