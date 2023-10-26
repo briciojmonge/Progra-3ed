@@ -35,5 +35,8 @@
     <ClInclude Include="codigos_nombres.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Main Anterior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
