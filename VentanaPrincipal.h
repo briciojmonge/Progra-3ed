@@ -1,14 +1,18 @@
 #pragma once
-
+#include <string>
+#include "ventanaAdministradorh.h"
+#include "ventanaClienteh.h"
+#include "Main Anterior.h"
+#include "Cliente.h"
 namespace progra3ED {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	int id;
+	int es_admin = 0;  // 0==no, 1==si
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
@@ -229,6 +233,9 @@ namespace progra3ED {
 private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	// la id de la persona
+	String^ textoIngresado = textBox1->Text;
+	id = Convert::ToInt32(textoIngresado);
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -239,10 +246,39 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label4_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+	// check box de administrador 
+	if (es_admin == 0) {
+		es_admin = 1;
+	}
+	else {
+		es_admin = 1;
+	}
+
 }
 private: System::Void checkBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+	// check box de cliente
+	if (es_admin==1){
+		es_admin = 0;
+	}
+	else {
+		es_admin = 0;
+	}
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	// continuar 
+	crearbase();
+	if (es_admin == 1) {
+		if (ACA.ValidarCodCliente(ACA.raiz, id)) {
+			ventanaAdministradorh^ newvent = gcnew ventanaAdministradorh();
+			newvent->Show();
+		}
+	}
+	else {
+		if (ACl.ValidarCodCliente(ACl.raiz, id)) {
+			ventanaClienteh^ newvent2 = gcnew ventanaClienteh();
+			newvent2->Show();
+		}
+	}
 }
 };
 }

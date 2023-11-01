@@ -93,6 +93,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -102,6 +104,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,6 +125,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="consultaMen.cpp" />
+    <ClCompile Include="consultarCiud.cpp" />
+    <ClCompile Include="ConsultaRes.cpp" />
+    <ClCompile Include="consultarPais.cpp" />
+    <ClCompile Include="consultarProd.cpp" />
     <ClCompile Include="ventanaAdministradorh.cpp" />
     <ClCompile Include="ventanaClienteh.cpp" />
     <ClCompile Include="VentanaPrincipal.cpp" />
@@ -128,7 +137,23 @@
   <ItemGroup>
     <ClInclude Include="AA.h" />
     <ClInclude Include="Binario.h" />
+    <ClInclude Include="Cliente.h" />
     <ClInclude Include="codigos_nombres.h" />
+    <ClInclude Include="consultaMen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="consultarCiud.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ConsultaRes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="consultarPais.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="consultarProd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Main Anterior.h" />
     <ClInclude Include="RN.h" />
     <ClInclude Include="ventanaAdministradorh.h">
@@ -142,6 +167,21 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="consultaMen.resx">
+      <DependentUpon>consultaMen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultarCiud.resx">
+      <DependentUpon>consultarCiud.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaRes.resx">
+      <DependentUpon>ConsultaRes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultarPais.resx">
+      <DependentUpon>consultarPais.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultarProd.resx">
+      <DependentUpon>consultarProd.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanaAdministradorh.resx">
       <DependentUpon>ventanaAdministradorh.h</DependentUpon>
     </EmbeddedResource>

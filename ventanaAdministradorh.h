@@ -35,6 +35,10 @@ namespace progra3ED {
 			}
 		}
 	private: System::Windows::Forms::TabControl^ tabs;
+	protected:
+
+	protected:
+
 	private: System::Windows::Forms::TabPage^ Incersión;
 	private: System::Windows::Forms::TabPage^ Consulta;
 	private: System::Windows::Forms::TabPage^ Modificación;
@@ -47,6 +51,36 @@ namespace progra3ED {
 	private: System::Windows::Forms::Button^ InCiudbtn;
 	private: System::Windows::Forms::Button^ InProdbtn;
 	private: System::Windows::Forms::Button^ InClienbtn;
+	private: System::Windows::Forms::Button^ ConPaisBTN;
+
+	private: System::Windows::Forms::Button^ ConClienteBTN;
+	private: System::Windows::Forms::Button^ ConProductoBTN;
+	private: System::Windows::Forms::Button^ ConMenuBTN;
+	private: System::Windows::Forms::Button^ ConRestBTN;
+	private: System::Windows::Forms::Button^ ConCiudadBTN;
+	private: System::Windows::Forms::Button^ ModClienteBTN;
+
+	private: System::Windows::Forms::Button^ ModProdBTN;
+
+	private: System::Windows::Forms::Button^ ModMenuBTN;
+
+	private: System::Windows::Forms::Button^ ModRestBTN;
+
+	private: System::Windows::Forms::Button^ ModCiudadBTN;
+
+	private: System::Windows::Forms::Button^ ModPaisBTN;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,9 +117,23 @@ namespace progra3ED {
 			this->InCiudbtn = (gcnew System::Windows::Forms::Button());
 			this->InPaisbtn = (gcnew System::Windows::Forms::Button());
 			this->Consulta = (gcnew System::Windows::Forms::TabPage());
+			this->ConClienteBTN = (gcnew System::Windows::Forms::Button());
+			this->ConProductoBTN = (gcnew System::Windows::Forms::Button());
+			this->ConMenuBTN = (gcnew System::Windows::Forms::Button());
+			this->ConRestBTN = (gcnew System::Windows::Forms::Button());
+			this->ConCiudadBTN = (gcnew System::Windows::Forms::Button());
+			this->ConPaisBTN = (gcnew System::Windows::Forms::Button());
 			this->Modificación = (gcnew System::Windows::Forms::TabPage());
+			this->ModClienteBTN = (gcnew System::Windows::Forms::Button());
+			this->ModProdBTN = (gcnew System::Windows::Forms::Button());
+			this->ModMenuBTN = (gcnew System::Windows::Forms::Button());
+			this->ModRestBTN = (gcnew System::Windows::Forms::Button());
+			this->ModCiudadBTN = (gcnew System::Windows::Forms::Button());
+			this->ModPaisBTN = (gcnew System::Windows::Forms::Button());
 			this->tabs->SuspendLayout();
 			this->Incersión->SuspendLayout();
+			this->Consulta->SuspendLayout();
+			this->Modificación->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabs
@@ -93,7 +141,7 @@ namespace progra3ED {
 			this->tabs->Controls->Add(this->Incersión);
 			this->tabs->Controls->Add(this->Consulta);
 			this->tabs->Controls->Add(this->Modificación);
-			this->tabs->Location = System::Drawing::Point(3, 0);
+			this->tabs->Location = System::Drawing::Point(2, 1);
 			this->tabs->Name = L"tabs";
 			this->tabs->SelectedIndex = 0;
 			this->tabs->Size = System::Drawing::Size(792, 435);
@@ -191,6 +239,12 @@ namespace progra3ED {
 			// Consulta
 			// 
 			this->Consulta->BackColor = System::Drawing::Color::Silver;
+			this->Consulta->Controls->Add(this->ConClienteBTN);
+			this->Consulta->Controls->Add(this->ConProductoBTN);
+			this->Consulta->Controls->Add(this->ConMenuBTN);
+			this->Consulta->Controls->Add(this->ConRestBTN);
+			this->Consulta->Controls->Add(this->ConCiudadBTN);
+			this->Consulta->Controls->Add(this->ConPaisBTN);
 			this->Consulta->Location = System::Drawing::Point(4, 22);
 			this->Consulta->Name = L"Consulta";
 			this->Consulta->Padding = System::Windows::Forms::Padding(3);
@@ -199,14 +253,156 @@ namespace progra3ED {
 			this->Consulta->Text = L"Consulta";
 			this->Consulta->Click += gcnew System::EventHandler(this, &ventanaAdministradorh::tabPage2_Click);
 			// 
+			// ConClienteBTN
+			// 
+			this->ConClienteBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConClienteBTN->Location = System::Drawing::Point(200, 277);
+			this->ConClienteBTN->Name = L"ConClienteBTN";
+			this->ConClienteBTN->Size = System::Drawing::Size(365, 43);
+			this->ConClienteBTN->TabIndex = 6;
+			this->ConClienteBTN->Text = L"Consultar Cliente";
+			this->ConClienteBTN->UseVisualStyleBackColor = true;
+			// 
+			// ConProductoBTN
+			// 
+			this->ConProductoBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConProductoBTN->Location = System::Drawing::Point(200, 228);
+			this->ConProductoBTN->Name = L"ConProductoBTN";
+			this->ConProductoBTN->Size = System::Drawing::Size(365, 43);
+			this->ConProductoBTN->TabIndex = 5;
+			this->ConProductoBTN->Text = L"Consultar Producto";
+			this->ConProductoBTN->UseVisualStyleBackColor = true;
+			// 
+			// ConMenuBTN
+			// 
+			this->ConMenuBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConMenuBTN->Location = System::Drawing::Point(200, 179);
+			this->ConMenuBTN->Name = L"ConMenuBTN";
+			this->ConMenuBTN->Size = System::Drawing::Size(365, 43);
+			this->ConMenuBTN->TabIndex = 4;
+			this->ConMenuBTN->Text = L"Consultar Menu";
+			this->ConMenuBTN->UseVisualStyleBackColor = true;
+			// 
+			// ConRestBTN
+			// 
+			this->ConRestBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConRestBTN->Location = System::Drawing::Point(200, 130);
+			this->ConRestBTN->Name = L"ConRestBTN";
+			this->ConRestBTN->Size = System::Drawing::Size(365, 43);
+			this->ConRestBTN->TabIndex = 3;
+			this->ConRestBTN->Text = L"Consultar Restaurante";
+			this->ConRestBTN->UseVisualStyleBackColor = true;
+			// 
+			// ConCiudadBTN
+			// 
+			this->ConCiudadBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConCiudadBTN->Location = System::Drawing::Point(200, 81);
+			this->ConCiudadBTN->Name = L"ConCiudadBTN";
+			this->ConCiudadBTN->Size = System::Drawing::Size(365, 43);
+			this->ConCiudadBTN->TabIndex = 2;
+			this->ConCiudadBTN->Text = L"Consultar Ciudad";
+			this->ConCiudadBTN->UseVisualStyleBackColor = true;
+			this->ConCiudadBTN->Click += gcnew System::EventHandler(this, &ventanaAdministradorh::button2_Click);
+			// 
+			// ConPaisBTN
+			// 
+			this->ConPaisBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ConPaisBTN->Location = System::Drawing::Point(200, 32);
+			this->ConPaisBTN->Name = L"ConPaisBTN";
+			this->ConPaisBTN->Size = System::Drawing::Size(365, 43);
+			this->ConPaisBTN->TabIndex = 1;
+			this->ConPaisBTN->Text = L"Consultar País";
+			this->ConPaisBTN->UseVisualStyleBackColor = true;
+			this->ConPaisBTN->Click += gcnew System::EventHandler(this, &ventanaAdministradorh::button1_Click);
+			// 
 			// Modificación
 			// 
 			this->Modificación->BackColor = System::Drawing::Color::Silver;
+			this->Modificación->Controls->Add(this->ModClienteBTN);
+			this->Modificación->Controls->Add(this->ModProdBTN);
+			this->Modificación->Controls->Add(this->ModMenuBTN);
+			this->Modificación->Controls->Add(this->ModRestBTN);
+			this->Modificación->Controls->Add(this->ModCiudadBTN);
+			this->Modificación->Controls->Add(this->ModPaisBTN);
 			this->Modificación->Location = System::Drawing::Point(4, 22);
 			this->Modificación->Name = L"Modificación";
 			this->Modificación->Size = System::Drawing::Size(784, 409);
 			this->Modificación->TabIndex = 2;
 			this->Modificación->Text = L"Modificación";
+			// 
+			// ModClienteBTN
+			// 
+			this->ModClienteBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModClienteBTN->Location = System::Drawing::Point(206, 284);
+			this->ModClienteBTN->Name = L"ModClienteBTN";
+			this->ModClienteBTN->Size = System::Drawing::Size(365, 43);
+			this->ModClienteBTN->TabIndex = 7;
+			this->ModClienteBTN->Text = L"Modificar Cliente";
+			this->ModClienteBTN->UseVisualStyleBackColor = true;
+			// 
+			// ModProdBTN
+			// 
+			this->ModProdBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModProdBTN->Location = System::Drawing::Point(206, 235);
+			this->ModProdBTN->Name = L"ModProdBTN";
+			this->ModProdBTN->Size = System::Drawing::Size(365, 43);
+			this->ModProdBTN->TabIndex = 6;
+			this->ModProdBTN->Text = L"Modificar Producto";
+			this->ModProdBTN->UseVisualStyleBackColor = true;
+			// 
+			// ModMenuBTN
+			// 
+			this->ModMenuBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModMenuBTN->Location = System::Drawing::Point(206, 186);
+			this->ModMenuBTN->Name = L"ModMenuBTN";
+			this->ModMenuBTN->Size = System::Drawing::Size(365, 43);
+			this->ModMenuBTN->TabIndex = 5;
+			this->ModMenuBTN->Text = L"Modificar Menu";
+			this->ModMenuBTN->UseVisualStyleBackColor = true;
+			// 
+			// ModRestBTN
+			// 
+			this->ModRestBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModRestBTN->Location = System::Drawing::Point(206, 137);
+			this->ModRestBTN->Name = L"ModRestBTN";
+			this->ModRestBTN->Size = System::Drawing::Size(365, 43);
+			this->ModRestBTN->TabIndex = 4;
+			this->ModRestBTN->Text = L"Modificar Restaurante";
+			this->ModRestBTN->UseVisualStyleBackColor = true;
+			// 
+			// ModCiudadBTN
+			// 
+			this->ModCiudadBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModCiudadBTN->Location = System::Drawing::Point(206, 88);
+			this->ModCiudadBTN->Name = L"ModCiudadBTN";
+			this->ModCiudadBTN->Size = System::Drawing::Size(365, 43);
+			this->ModCiudadBTN->TabIndex = 3;
+			this->ModCiudadBTN->Text = L"Modificar Ciudad";
+			this->ModCiudadBTN->UseVisualStyleBackColor = true;
+			this->ModCiudadBTN->Click += gcnew System::EventHandler(this, &ventanaAdministradorh::button2_Click_1);
+			// 
+			// ModPaisBTN
+			// 
+			this->ModPaisBTN->Font = (gcnew System::Drawing::Font(L"Consolas", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ModPaisBTN->Location = System::Drawing::Point(206, 39);
+			this->ModPaisBTN->Name = L"ModPaisBTN";
+			this->ModPaisBTN->Size = System::Drawing::Size(365, 43);
+			this->ModPaisBTN->TabIndex = 2;
+			this->ModPaisBTN->Text = L"Modificar País";
+			this->ModPaisBTN->UseVisualStyleBackColor = true;
+			this->ModPaisBTN->Click += gcnew System::EventHandler(this, &ventanaAdministradorh::ModPaisBTN_Click);
 			// 
 			// ventanaAdministradorh
 			// 
@@ -220,6 +416,8 @@ namespace progra3ED {
 			this->Load += gcnew System::EventHandler(this, &ventanaAdministradorh::ventanaAdministradorh_Load);
 			this->tabs->ResumeLayout(false);
 			this->Incersión->ResumeLayout(false);
+			this->Consulta->ResumeLayout(false);
+			this->Modificación->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -241,6 +439,14 @@ private: System::Void InMebtn_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void InProdbtn_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void InClienbtn_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void ModPaisBTN_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

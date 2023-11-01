@@ -1,0 +1,16 @@
+﻿  VentanaPrincipal.cpp
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(87,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(168,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(168,22): warning C4101: 'codpaisnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,36): warning C4101: 'codresnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,22): warning C4101: 'codpaisnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(979,37): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(995,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(1000,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(1018,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(1023,59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\VentanaPrincipal.cpp(7,11): error C2976: 'std::array': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(138,7): message : see declaration of 'std::array'
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\VentanaPrincipal.cpp(7,27): error C3699: '^': cannot use this indirection on type 'std::array'
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\VentanaPrincipal.cpp(7,27): message : compiler replacing '^' with '*' to continue parsing

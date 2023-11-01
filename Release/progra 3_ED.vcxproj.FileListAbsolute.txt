@@ -1,0 +1,6 @@
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra 3_ED.vcxproj.AssemblyReference.cache
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra3ED.ventanaAdministradorh.resources
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra3ED.ventanaClienteh.resources
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra3ED.VentanaPrincipal.resources
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra 3_ED.vcxproj.GenerateResource.cache
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Release\progra 3_ED.exe

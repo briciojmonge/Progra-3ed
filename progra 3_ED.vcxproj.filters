@@ -24,6 +24,21 @@
     <ClCompile Include="ventanaClienteh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="consultarPais.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consultarCiud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultaRes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consultaMen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consultarProd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VentanaPrincipal.h">
@@ -48,6 +63,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ventanaClienteh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cliente.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consultarPais.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consultarCiud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsultaRes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consultaMen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consultarProd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

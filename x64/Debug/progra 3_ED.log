@@ -1,0 +1,16 @@
+﻿  VentanaPrincipal.cpp
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(87,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(168,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(168,22): warning C4101: 'codpaisnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,9): warning C4101: 'nuevocodigo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,36): warning C4101: 'codresnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(389,22): warning C4101: 'codpaisnuevo': unreferenced local variable
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Cliente.h(305): warning C4715: 'Cliente::ValidarCodCliente': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(43): warning C4715: 'Binario::ValidarCodPais': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(124): warning C4715: 'Binario::ValidarCodCiud': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(206): warning C4715: 'Binario::ValidarCodProd': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(347): warning C4715: 'ArbolRN::ValidarCodRes': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(272): warning C4715: 'Binario::buscarPreccio': not all control paths return a value
+C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\Main Anterior.h(289): warning C4715: 'Binario::buscarnombreP': not all control paths return a value
+  ventanaAdministradorh.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  progra 3_ED.vcxproj -> C:\Users\fabri\OneDrive\Escritorio\clases2.0\github\Progra-3ed\x64\Debug\progra 3_ED.exe
