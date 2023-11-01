@@ -1,14 +1,17 @@
 #pragma once
+#include "VentanaPrincipal.h"
+#include "Main Anterior.h"
+#include "Cliente.h"
 
 namespace progra3ED {
-
+	
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	int codigodepais;
 	/// <summary>
 	/// Summary for consultarPais
 	/// </summary>
@@ -89,6 +92,7 @@ namespace progra3ED {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(276, 20);
 			this->textBox1->TabIndex = 2;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &consultarPais::textBox1_TextChanged);
 			// 
 			// button1
 			// 
@@ -128,6 +132,16 @@ namespace progra3ED {
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (ABB.ValidarCodPais(ABB.raiz,codigodepais)) {
+
 	}
+		else {
+
+		}
+	}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	String^ textoIngresado = textBox1->Text;
+	codigodepais = Convert::ToInt32(textoIngresado);
+}
 };
 }
